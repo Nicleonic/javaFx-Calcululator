@@ -1,16 +1,356 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.Insets?>
+<?import java.net.URL?>
+<?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
 
-<?import javafx.scene.control.Button?>
-<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
-      fx:controller="com.example.calctwo.HelloController">
-    <padding>
-        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
-    </padding>
-
-    <Label fx:id="welcomeText"/>
-    <Button text="Hello!" onAction="#onHelloButtonClick"/>
-</VBox>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="557.0" prefWidth="426.0" styleClass="root" stylesheets="@Style.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.calctwo.MainController">
+   <children>
+      <Pane layoutX="6.0" layoutY="36.0" onMouseClicked="#onMouseClicked" prefHeight="517.0" prefWidth="415.0" styleClass="mainPane">
+         <children>
+            <Pane layoutX="8.0" layoutY="8.0" prefHeight="99.0" prefWidth="402.0" styleClass="highlight" stylesheets="@Style.css">
+               <children>
+                  <Label fx:id="viewer" alignment="CENTER_RIGHT" layoutX="1.0" prefHeight="99.0" prefWidth="396.0" text="0.0" textFill="#f8f6f6" wrapText="true">
+                     <font>
+                        <Font name="Agency FB" size="66.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutX="7.0" layoutY="116.0" prefHeight="82.0" prefWidth="94.0" styleClass="btnPane" stylesheets="@Style.css">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <effect>
+                  <Glow />
+               </effect>
+               <Label fx:id="ch7" alignment="CENTER" contentDisplay="RIGHT" layoutX="8.0" onMouseClicked="#onNumberClicked" prefHeight="82.0" prefWidth="78.0" styleClass="btn" text="7" textFill="#f8f6f6" wrapText="true">
+                  <font>
+                     <Font name="Agency FB" size="66.0" />
+                  </font>
+               </Label>
+            </Pane>
+            <Pane layoutX="108.0" layoutY="116.0" prefHeight="82.0" prefWidth="94.0" styleClass="btnPane">
+               <stylesheets>
+                  <URL value="@Style.css" />
+                  <URL value="@Style.css" />
+               </stylesheets>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <effect>
+                  <Glow />
+               </effect>
+               <children>
+                  <Label fx:id="ch8" alignment="CENTER" contentDisplay="RIGHT" layoutX="8.0" onMouseClicked="#onNumberClicked" prefHeight="82.0" prefWidth="78.0" styleClass="btn" text="8" textFill="#f8f6f6" wrapText="true">
+                     <font>
+                        <Font name="Agency FB" size="66.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutX="210.0" layoutY="116.0" prefHeight="82.0" prefWidth="94.0" styleClass="btnPane">
+               <stylesheets>
+                  <URL value="@Style.css" />
+                  <URL value="@Style.css" />
+               </stylesheets>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <effect>
+                  <Glow />
+               </effect>
+               <children>
+                  <Label fx:id="ch9" alignment="CENTER" contentDisplay="CENTER" layoutX="8.0" onMouseClicked="#onNumberClicked" prefHeight="82.0" prefWidth="78.0" styleClass="btn" text="9" textFill="#f8f6f6" wrapText="true">
+                     <font>
+                        <Font name="Agency FB" size="66.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutX="311.0" layoutY="116.0" prefHeight="82.0" prefWidth="94.0" styleClass="btnPane">
+               <stylesheets>
+                  <URL value="@Style.css" />
+                  <URL value="@Style.css" />
+               </stylesheets>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <effect>
+                  <Glow />
+               </effect>
+               <children>
+                  <Label fx:id="btnAdd" alignment="CENTER" contentDisplay="RIGHT" layoutX="8.0" onMouseClicked="#onSymbolClicked" prefHeight="82.0" prefWidth="78.0" styleClass="btn" text="+" textFill="#f8f6f6" wrapText="true">
+                     <font>
+                        <Font name="Agency FB" size="66.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutX="8.0" layoutY="208.0" prefHeight="82.0" prefWidth="94.0" styleClass="btnPane">
+               <stylesheets>
+                  <URL value="@Style.css" />
+                  <URL value="@Style.css" />
+               </stylesheets>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <effect>
+                  <Glow />
+               </effect>
+               <children>
+                  <Label fx:id="ch4" alignment="CENTER" contentDisplay="RIGHT" layoutX="6.0" layoutY="3.0" onMouseClicked="#onNumberClicked" prefHeight="82.0" prefWidth="78.0" styleClass="btn" text="4" textFill="#f8f6f6" wrapText="true">
+                     <font>
+                        <Font name="Agency FB" size="66.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutX="109.0" layoutY="208.0" prefHeight="82.0" prefWidth="94.0" styleClass="btnPane">
+               <stylesheets>
+                  <URL value="@Style.css" />
+                  <URL value="@Style.css" />
+               </stylesheets>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <effect>
+                  <Glow />
+               </effect>
+               <children>
+                  <Label fx:id="ch5" alignment="CENTER" contentDisplay="RIGHT" layoutX="8.0" onMouseClicked="#onNumberClicked" prefHeight="82.0" prefWidth="78.0" styleClass="btn" text="5" textFill="#f8f6f6" wrapText="true">
+                     <font>
+                        <Font name="Agency FB" size="66.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutX="211.0" layoutY="208.0" prefHeight="82.0" prefWidth="94.0" styleClass="btnPane">
+               <stylesheets>
+                  <URL value="@Style.css" />
+                  <URL value="@Style.css" />
+               </stylesheets>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <effect>
+                  <Glow />
+               </effect>
+               <children>
+                  <Label fx:id="ch6" alignment="CENTER" contentDisplay="RIGHT" layoutX="6.0" layoutY="1.0" onMouseClicked="#onNumberClicked" prefHeight="82.0" prefWidth="78.0" styleClass="btn" text="6" textFill="#f8f6f6" wrapText="true">
+                     <font>
+                        <Font name="Agency FB" size="66.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutX="312.0" layoutY="208.0" prefHeight="82.0" prefWidth="94.0" styleClass="btnPane">
+               <stylesheets>
+                  <URL value="@Style.css" />
+                  <URL value="@Style.css" />
+               </stylesheets>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <effect>
+                  <Glow />
+               </effect>
+               <children>
+                  <Label fx:id="btnMoins" alignment="CENTER" contentDisplay="RIGHT" layoutX="8.0" onMouseClicked="#onSymbolClicked" prefHeight="82.0" prefWidth="78.0" styleClass="btn" text="-" textFill="#f8f6f6" wrapText="true">
+                     <font>
+                        <Font name="Agency FB" size="66.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutX="9.0" layoutY="298.0" prefHeight="82.0" prefWidth="94.0" styleClass="btnPane">
+               <stylesheets>
+                  <URL value="@Style.css" />
+                  <URL value="@Style.css" />
+               </stylesheets>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <effect>
+                  <Glow />
+               </effect>
+               <children>
+                  <Label fx:id="ch1" alignment="CENTER" contentDisplay="RIGHT" layoutX="8.0" onMouseClicked="#onNumberClicked" prefHeight="82.0" prefWidth="78.0" styleClass="btn" text="1" textFill="#f8f6f6" wrapText="true">
+                     <font>
+                        <Font name="Agency FB" size="66.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutX="110.0" layoutY="298.0" prefHeight="82.0" prefWidth="94.0" styleClass="btnPane">
+               <stylesheets>
+                  <URL value="@Style.css" />
+                  <URL value="@Style.css" />
+               </stylesheets>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <effect>
+                  <Glow />
+               </effect>
+               <children>
+                  <Label fx:id="ch2" alignment="CENTER" contentDisplay="RIGHT" layoutX="8.0" onMouseClicked="#onNumberClicked" prefHeight="82.0" prefWidth="78.0" styleClass="btn" text="2" textFill="#f8f6f6" wrapText="true">
+                     <font>
+                        <Font name="Agency FB" size="66.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutX="212.0" layoutY="298.0" prefHeight="82.0" prefWidth="94.0" styleClass="btnPane">
+               <stylesheets>
+                  <URL value="@Style.css" />
+                  <URL value="@Style.css" />
+               </stylesheets>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <effect>
+                  <Glow />
+               </effect>
+               <children>
+                  <Label fx:id="ch3" alignment="CENTER" contentDisplay="RIGHT" layoutX="8.0" onMouseClicked="#onNumberClicked" prefHeight="82.0" prefWidth="78.0" styleClass="btn" text="3" textFill="#f8f6f6" wrapText="true">
+                     <font>
+                        <Font name="Agency FB" size="66.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutX="313.0" layoutY="298.0" prefHeight="82.0" prefWidth="94.0" styleClass="btnPane">
+               <stylesheets>
+                  <URL value="@Style.css" />
+                  <URL value="@Style.css" />
+               </stylesheets>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <effect>
+                  <Glow />
+               </effect>
+               <children>
+                  <Label fx:id="btnMult" alignment="CENTER" contentDisplay="RIGHT" layoutX="8.0" layoutY="2.0" onMouseClicked="#onSymbolClicked" prefHeight="27.0" prefWidth="78.0" styleClass="btn" text="*" textAlignment="JUSTIFY" textFill="#f8f6f6" wrapText="true">
+                     <font>
+                        <Font name="Agency FB" size="66.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutX="10.0" layoutY="390.0" prefHeight="82.0" prefWidth="94.0" styleClass="btnPane">
+               <stylesheets>
+                  <URL value="@Style.css" />
+                  <URL value="@Style.css" />
+               </stylesheets>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <effect>
+                  <Glow />
+               </effect>
+               <children>
+                  <Label fx:id="btnClear" alignment="CENTER" contentDisplay="RIGHT" layoutY="2.0" onMouseClicked="#onSymbolClicked" prefHeight="79.0" prefWidth="94.0" styleClass="btn" text="c" textAlignment="JUSTIFY" textFill="#f8f6f6" wrapText="true">
+                     <font>
+                        <Font name="Agency FB" size="66.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutX="111.0" layoutY="390.0" prefHeight="82.0" prefWidth="94.0" styleClass="btnPane">
+               <stylesheets>
+                  <URL value="@Style.css" />
+                  <URL value="@Style.css" />
+               </stylesheets>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <effect>
+                  <Glow />
+               </effect>
+               <children>
+                  <Label fx:id="ch0" alignment="CENTER" contentDisplay="RIGHT" layoutX="8.0" onMouseClicked="#onNumberClicked" prefHeight="82.0" prefWidth="78.0" styleClass="btn" text="0" textFill="#f8f6f6" wrapText="true">
+                     <font>
+                        <Font name="Agency FB" size="66.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutX="213.0" layoutY="390.0" prefHeight="82.0" prefWidth="94.0" styleClass="btnPane">
+               <stylesheets>
+                  <URL value="@Style.css" />
+                  <URL value="@Style.css" />
+               </stylesheets>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <effect>
+                  <Glow />
+               </effect>
+               <children>
+                  <Label fx:id="btnEquals" alignment="CENTER" contentDisplay="RIGHT" layoutX="6.0" onMouseClicked="#onSymbolClicked" prefHeight="82.0" prefWidth="78.0" styleClass="btn" text="=" textFill="#f8f6f6" wrapText="true">
+                     <font>
+                        <Font name="Agency FB" size="66.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutX="314.0" layoutY="390.0" prefHeight="82.0" prefWidth="94.0" styleClass="btnPane">
+               <stylesheets>
+                  <URL value="@Style.css" />
+                  <URL value="@Style.css" />
+               </stylesheets>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <effect>
+                  <Glow />
+               </effect>
+               <children>
+                  <Label fx:id="btnDiv" alignment="CENTER" contentDisplay="RIGHT" layoutX="8.0" onMouseClicked="#onSymbolClicked" prefHeight="82.0" prefWidth="78.0" styleClass="btn" text="/" textFill="#f8f6f6" wrapText="true">
+                     <font>
+                        <Font name="Agency FB" size="66.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Label layoutX="165.0" layoutY="483.0" styleClass="Author" text="©Nicleonic" textFill="#fcf9f9">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane fx:id="titlePane" prefHeight="39.0" prefWidth="430.0" styleClass="secondPane">
+         <children>
+            <Label layoutX="54.0" layoutY="6.0" styleClass="title" text="Calculator" textFill="#fcf9f9">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="close" fitHeight="16.0" fitWidth="16.0" layoutX="400.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../close.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="minimize" fitHeight="16.0" fitWidth="16.0" layoutX="378.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../minimize.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="icon" fitHeight="27.0" fitWidth="39.0" layoutX="19.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../finger.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

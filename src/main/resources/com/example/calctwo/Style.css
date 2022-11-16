@@ -9,6 +9,7 @@
 .title{
     -fx-background-color: TRANSPARENT;
 }
+/*
 .minimize{
     -fx-background-color: TRANSPARENT;
 }
@@ -16,5 +17,32 @@
     -fx-background-color: TRANSPARENT;
 }
 .secondPane{
-    /*-fx-background-color: #685ACD;*/
+    -fx-background-color: #685ACD;
 }
+*/
+.highlight{
+    -fx-background-color:#06666025;
+    -fx-background-radius: 15 15 15 15;
+}
+.btnPane{
+    -fx-background-radius: 15;
+    -fx-background-color:#06666025;
+}
+.btnPane:pressed{
+    -fx-background-color: #275268;
+}
+.btnPane:hover{
+    -fx-background-color: #B15B2E;
+}
+/*.btnPane:hover{
+    -fx-background-radius: 15;
+    -fx-background-color:#4F4F4F;
+}
+*/
+.Author{
+    -fx-background-color:linear-gradient(to top right, #286112, #855BB8);
+}
+/*
+.btn{
+ -fx-background-radius: 50;
+}*/
